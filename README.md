@@ -1,3 +1,3 @@
 # Survey Form
 
-Free code camp exercise 2
+Hi, this is mi survey form coding excercise I've done for the HTML basic course in freecodecamp.org
