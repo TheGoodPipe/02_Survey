@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>02. Survey</title>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Girassol&family=Roboto:wght@500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <main>
+            <header id="header">
+                <h1 id="title">Survey Form</h1>
+                <p id="description">in colaboration with <a class="sp-link" href="https://www.freecodecamp.org/">FreeCodeCamp.org</a></p>
+            </header>
+            <div id="container">
+                <form id="survey-form" action="submit-form.html">
+                    <div id="form-div">
+                        <label for="name" id="name-label">Name</label>
+                        <input type="text" name="name" id="name" placeholder="Enter your Name" required>
+                    </div>
+                    <div id="form-div">
+                        <label for="Email" id="email-label">Email</label>
+                        <input type="email" name="email" id="email" placeholder="Enter your Email" required>
+                    </div>
+                    <div id="form-div">
+                        <label for="age" id="number-label">Age (must be +18 to submit form)</label>
+                        <input type="number" name="age" id="number" min="18" max="120" placeholder="Enter your Age" required>
+                    </div>
+                    <div id="form-div">
+                        <p>Choose your favourite coding language</p>
+                        <select id="dropdown" name="coding-language" required>
+                            <option disabled selected>Select coding language</option>
+                            <option value="html-css">Html + CSS</option>
+                            <option value="javascript">Javascript</option>
+                            <option value="c++">C++</option>
+                            <option value="python">Python</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div id="form-div">
+                        <p>How bad does this code look?</p>
+                        <label for="sucks"><input id="sucks" value="sucks" type="radio" name="code-review" checked> It sucks</label>
+                        <label for="not-bad"><input id="not-bad" value="not-bad" type="radio" name="code-review"> Not bad</label>
+                        <label for="looking-good"><input id="looking-good" value="looking-good" type="radio" name="code-review"> Looking good mate</label>
+                    </div>
+                    <div id="form-div">
+                        <p>What would you change?</p>
+                        <label for="css"><input id="css" value="css" type="checkbox" name="change-review"> CSS management</label>
+                        <label for="code"><input id="code" value="code" type="checkbox" name="change-review"> HTML code</label>
+                        <label for="both"><input id="both" value="both" type="checkbox" name="change-review"> Both of them</label>
+                    </div>
+                    <div id="form-div">
+                        <p>Care to explain?</p>
+                        <textarea id="comments" class="" name="comments" placeholder="Type here..."></textarea>
+                    </div>
+                    <div id="form-div">
+                        <button type="submit" id="submit">Submit</button>
+                    </div>
+                  </form>
+            </div>
+        </main>
+    </body>
+    <footer>The Good Pipe</footer>
+</html>
